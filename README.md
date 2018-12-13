@@ -24,6 +24,7 @@ The first part of this workshop will focus on the fundamentals of Docker and how
 1. Type `docker logs nginx` to see the logs produced by nginx and the container from our loading a page from it.
 1. Type `docker exec -it nginx /bin/bash` for an interactive shell into the container's filesystem and constraints
 1. Type `cd /usr/share/nginx/html` and `cat index.html` to see the content the nginx is serving which is part of the container.
+1. Type `exit` to exit our shell within the container.
 1. Type `docker stop nginx` to stop the container.
 1. Type `docker ps -a` to see that our container is still there but stopped. At this point it could be restarted with a `docker start nginx` if we wanted.
 1. Type `docker rm nginx` to remove the container from our machine
