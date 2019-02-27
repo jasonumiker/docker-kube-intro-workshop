@@ -29,8 +29,7 @@ The first part of this workshop will focus on the fundamentals of Docker and how
 1. Type `docker ps -a` to see that our container is still there but stopped. At this point it could be restarted with a `docker start nginx` if we wanted.
 1. Type `docker rm nginx` to remove the container from our machine
 1. Type `docker rmi nginx:latest` to remove the nginx image from our machine's local cache
-1. Type `git clone https://github.com/jasonumiker/docker-workshop.git` to pull down the required Dockerfile to re(build) nginx locally
-1. Type `cd docker-workshop` to change into that project.
+1. Type `cd docker-kube-intro-workshop` to change into that project.
 1. Type `docker build -t nginx:1.0 .` to build nginx from our Dockerfile
 1. Type `docker history nginx:1.0`. to see all the steps and base containers that our nginx:1.0 is built on. Note that our change amounts to one new tiny layer on top.
 1. Type `docker run -p 8080:80 --name nginx nginx:1.0` to run our new container. Note that we didn't specify the `-d` to make it a daemon which means it holds control of our terminal and outputs the containers logs to there which can be handy in debugging.
