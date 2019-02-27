@@ -404,3 +404,467 @@ subjects:
   kind: Group
   name: user14:admins
 ---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user15
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+ name: user15:admins
+ namespace: user15
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user15-admins
+  namespace: user15
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: user15:admins
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: user15:admins
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user16
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+ name: user14:admins
+ namespace: user16
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user16-admins
+  namespace: user16
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: user16:admins
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: user16:admins
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user17
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+ name: user17:admins
+ namespace: user17
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user17-admins
+  namespace: user17
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: user17:admins
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: user17:admins
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user18
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+ name: user18:admins
+ namespace: user18
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user18-admins
+  namespace: user18
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: user18:admins
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: user18:admins
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user19
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+ name: user19:admins
+ namespace: user19
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user19-admins
+  namespace: user19
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: user19:admins
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: user19:admins
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user20
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+ name: user20:admins
+ namespace: user20
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user20-admins
+  namespace: user20
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: user20:admins
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: user20:admins
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user21
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+ name: user21:admins
+ namespace: user21
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user21-admins
+  namespace: user21
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: user21:admins
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: user21:admins
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user22
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+ name: user22:admins
+ namespace: user22
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user22-admins
+  namespace: user22
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: user22:admins
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: user22:admins
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user23
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+ name: user23:admins
+ namespace: user23
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user23-admins
+  namespace: user23
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: user23:admins
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: user23:admins
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user24
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+ name: user24:admins
+ namespace: user24
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user24-admins
+  namespace: user24
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: user24:admins
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: user24:admins
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user25
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+ name: user25:admins
+ namespace: user25
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user25-admins
+  namespace: user25
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: user25:admins
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: user25:admins
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user26
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+ name: user26:admins
+ namespace: user26
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user26-admins
+  namespace: user26
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: user26:admins
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: user26:admins
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user27
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+ name: user27:admins
+ namespace: user27
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user27-admins
+  namespace: user27
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: user27:admins
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: user27:admins
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user28
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+ name: user28:admins
+ namespace: user28
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user28-admins
+  namespace: user28
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: user28:admins
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: user28:admins
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user29
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+ name: user29:admins
+ namespace: user29
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user29-admins
+  namespace: user29
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: user29:admins
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: user29:admins
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user30
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+ name: user30:admins
+ namespace: user30
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user30-admins
+  namespace: user30
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: user30:admins
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: user30:admins
+---

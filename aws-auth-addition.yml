@@ -1,0 +1,120 @@
+    - rolearn: arn:aws:iam::111111111111:role/eks-user1
+      username: user1
+      groups:
+        - user1:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user2
+      username: user2
+      groups:
+        - user2:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user3
+      username: user3
+      groups:
+        - user3:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user4
+      username: user4
+      groups:
+        - user4:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user5
+      username: user5
+      groups:
+        - user5:admins  
+    - rolearn: arn:aws:iam::111111111111:role/eks-user6
+      username: user6
+      groups:
+        - user6:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user7
+      username: user7
+      groups:
+        - user7:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user8
+      username: user8
+      groups:
+        - user8:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user9
+      username: user9
+      groups:
+        - user9:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user10
+      username: user10
+      groups:
+        - user10:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user11
+      username: user11
+      groups:
+        - user11:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user12
+      username: user12
+      groups:
+        - user12:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user13
+      username: user13
+      groups:
+        - user13:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user14
+      username: user14
+      groups:
+        - user14:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user15
+      username: user15
+      groups:
+        - user15:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user16
+      username: user16
+      groups:
+        - user16:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user17
+      username: user17
+      groups:
+        - user17:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user18
+      username: user18
+      groups:
+        - user18:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user19
+      username: user19
+      groups:
+        - user19:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user20
+      username: user20
+      groups:
+        - user20:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user21
+      username: user21
+      groups:
+        - user21:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user22
+      username: user22
+      groups:
+        - user22:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user23
+      username: user23
+      groups:
+        - user23:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user24
+      username: user24
+      groups:
+        - user24:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user25
+      username: user25
+      groups:
+        - user25:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user26
+      username: user26
+      groups:
+        - user26:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user27
+      username: user27
+      groups:
+        - user27:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user28
+      username: user28
+      groups:
+        - user28:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user29
+      username: user29
+      groups:
+        - user29:admins
+    - rolearn: arn:aws:iam::111111111111:role/eks-user30
+      username: user30
+      groups:
+        - user30:admins
