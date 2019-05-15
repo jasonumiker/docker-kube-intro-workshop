@@ -3,9 +3,9 @@
 ## Working Environment
 
 ### Cloud9
-All of the local Docker commands will be run within a Cloud9 environment. Cloud9 is a combination of a dedicated Linux instance on EC2 and a nice browser-based front-end for it that includes both an Integrated Development Envornment (IDE) and a Shell to interact with it. The steps to set up this Cloud9 are in our EKS Workshop <https://eksworkshop.com/prerequisites/self_paced/workspace/#region-3>. The closest region it is available to us is Singapore so please create it there.
+All of the local Docker commands will be run within a Cloud9 environment. Cloud9 is a combination of a dedicated Linux instance on EC2 and a nice browser-based front-end for it that includes both an Integrated Development Envornment (IDE) and a Shell to interact with it. The steps to set up this Cloud9 are in our EKS Workshop <https://eksworkshop.com/prerequisites/self_paced/workspace/#region-0>. Today we'll use Oregon as Cloud9 is not yet available in Sydney.
 
-You can do the [Docker Basics](#docker-basics) steps from just a newly launched Cloud9 without worrying about IAM or the Kubernetes setup steps.
+You can do the local [Docker Basics](#docker-basics) steps on just a newly launched Cloud9 without worrying about IAM or the Kubernetes setup steps. I suggest that you do the Kubernetes steps below at the start though as EKS takes 15-20 minutes to launch and you can do the Docker steps while waiting for that to complete.
 
 ### Kubernetes
 To do the [Kubernetes Basics](#kubernetes-basics) steps we'll need to set up an EKS cluster. The instructions to do that are in the <https://eksworkshop.com> guide under `Start the workshop ... on your own`. Please continue those instructions including the `Create an IAM role for your Workspace`, `Attach the IAM role to your Workspace`, `Install Kubernetes Tools`, `Update the IAM settings for your Workspace`, `Create an SSH key` and `Launch using eksctl`. Then stop and complete the [introductory steps in this guide](#kubernets-basics) before proceeding with that workshop.
