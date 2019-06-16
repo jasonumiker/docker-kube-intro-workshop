@@ -4,7 +4,7 @@
 
 set -e
 
-NumberOfRoles=30
+NumberOfRoles=20
 
 # Setting up the array
 for (( c=1; c<=$NumberOfRoles; c++ ))
