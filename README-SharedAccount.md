@@ -5,8 +5,6 @@
 ### Cloud9
 We have provisioned a Cloud9 instance and its browser-based IDE and terminal for each of you. This is a web interface to a Linux machine with Docker installed and ready to go. Being Linux, containers run right on these Cloud9 instances when you use the docker commands.
 
-TODO - Add instructions/screenshots to launch the Cloud9
-
 ### Kubernetes
 We have provisioned a kubernetes cluster based on AWS' EKS with a namespace for each of you and your Cloud9 is set up with the right config and credentials where it is ready to go. Using the `kubectl` command will 'just work' in the examples below. We'll be covering how to set up Kubernetes and how things work under-the-hood in another session soon.
 
@@ -15,6 +13,7 @@ We have provisioned a kubernetes cluster based on AWS' EKS with a namespace for 
 ### Docker Basics
 The first part of this workshop will focus on the fundamentals of Docker and how to use it locally within one machine.
 
+1. Open the AWS console, choose the `Oregon` region on the upper right hand corner, choose the Cloud9 service and then click the button to lauch the IDE.
 1. Type `docker version` to confirm that both the client and server are there and working.
 1. Type `docker pull nginx:latest` to pull down the latest nginx trusted image from Docker Hub.
 1. Type `docker images` to verify that the image is now on your local machine's Docker cache. If we start it then it won't have to pull it down from Docker Hub first.
@@ -71,3 +70,4 @@ This part of the workshop will focus on how to deploy and machine our containers
     1. Edit the file and have a look (double-click on it in Cloud9 in the pane on the left to open it in that IDE or use nano/vim in the Terminal). We could have written our requirements for what we need Kubernetes to do into YAML files like this in the first place instead of using these kubectl commands - and often you would do that and put it in a CI/CD pipeline etc. Note that you can put the definitions for multiple types of resources (in this example both a service and a deployment) in one YAML file.
 1. Type `kubectl delete service/nginx deployment/nginx` to clean up what we've done.
 1. Type `kubectl apply -f nginx.yml` to put it back again. See how easy it is to export and reapply the YAML?
+1. In the Docker example we mounted a volume outside the container. You can do the same thing in Kubernetes at scale with a PersistentVolume (using an EBS volume in AWS) and a StatefulSet. Go through the example at https://eksworkshop.com/statefulset/ to see how you can run a stateful application like MySQL on the cluster.
