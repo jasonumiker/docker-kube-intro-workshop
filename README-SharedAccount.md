@@ -18,7 +18,7 @@ The first part of this workshop will focus on the fundamentals of Docker and how
 1. Type `docker version` to confirm that both the client and server are there and working.
 1. Type `docker pull nginx:latest` to pull down the latest nginx trusted image from Docker Hub.
 1. Type `docker images` to verify that the image is now on your local machine's Docker cache. If we start it then it won't have to pull it down from Docker Hub first.
-1. Type `docker run –d –p 8080:80 --name nginx nginx:latest` to instantiate the nginx image as a background daemon with port 8080 on the host forwarding through to port 80 within the container
+1. Type `docker run -d -p 8080:80 --name nginx nginx:latest` to instantiate the nginx image as a background daemon with port 8080 on the host forwarding through to port 80 within the container
 1. Type `docker ps` to see that our nginx container is running.
 1. Type `curl http://localhost:8080` to use the nginx container and verify it is working with its default `index.html`.
 1. Type `docker logs nginx` to see the logs produced by nginx and the container from our loading a page from it.
