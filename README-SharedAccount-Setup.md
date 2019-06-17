@@ -30,3 +30,13 @@ To set up the environment:
     1. `cd ../docker-kube-intro-workshop`
     1. `./bulk-create-cloud9s.sh <AWS Account #> <one of the EKS Public Subnet IDs>`
         1. If you get throttled note where it left off and rerun it with a 3rd parameter of the user # to start with. If it made it to 10 then put an 11 for the next user to create.
+1. Assign the EC2 role with Admin privileges to each Cloud9 instance in the EC2 console
+1. Sign in as each user and connect to each Cloud9 instance and:
+    1. Close all the windows and open one big Terminal window
+    1. Turn off AWS managed temporary credentials in settings (so it uses the full Admin IAM Role we assigned)
+    1. Run the following command (the first time) - `aws eks update-kubeconfig --name eks --role-arn arn:aws:iam::111111111111:role/eks-userXX --region us-west-2`
+        1. If you copy/paste this somewhere you can then just paste it in for the subsequent users incrementing the role # as requried.
+    1. Change the `~/.kube/config` file to add the namespace to the context as per example-kubeconfig.txt
+    1. Run the `eks-setup-script.sh` to install kubectl and the authenticator plugin.
+    1. Run `kubectl` get all and see it worked
+    1. Close and re-open a new Terminal window so when the attendee signs in it is all fresh
