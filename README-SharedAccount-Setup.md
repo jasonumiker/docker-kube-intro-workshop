@@ -24,7 +24,7 @@ To set up the environment:
     1. `kubectl edit -n kube-system configmap/aws-auth`
         1. Find/Replace account number in aws-auth-addition.yml with yours and then copy/paste it under mapRoles in the editor
     1. `kubectl apply -f eks-user.yml`
-    1. `cd ../bulk-create-iam-users.git`
+    1. `cd ../bulk-create-iam-users`
     1. `chmod u+x *`
     1. `./bulk-create-iam-users.sh`
     1. `cd ../docker-kube-intro-workshop`
