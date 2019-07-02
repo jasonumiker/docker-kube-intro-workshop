@@ -9,7 +9,7 @@ We'll be creating the following in one shared account:
 
 To set up the environment:
 1. Create an AWS Account and sign in with Admin privilenges
-1. Create an EC2 role with Administrator privilges
+1. Create an EC2 role with Administrator privilges called EC2Admin
 1. Create an Amazon Linux 2 EC2 instance with that role in one of the default public subnets in Oregon (us-west-2)
     1. Choose to create a new SSH key and download that to SSH onto it
 1. SSH to that instance
@@ -34,7 +34,7 @@ To set up the environment:
     1. Run `./bulk-create-iam-eks-roles.sh`
     1. Run `wget https://eksworkshop.com/statefulset/storageclass.files/mysql-storageclass.yml`
     1. Run `kubectl create -f mysql-storageclass.yml`
-1. Assign the EC2 role with Admin privileges to each Cloud9 instance in the EC2 console
+    1. Wait until all the Cloud9 EC2 instances have launched then run `aws ec2 describe-instances --region us-west-2 --output text --filters 'Name=tag:Name,Values=*cloud9*' --query 'Reservations[*].Instances[*].InstanceId' | xargs -n 1 echo aws ec2 associate-iam-instance-profile --region ap-southeast-1 --iam-instance-profile Name=EC2Admin --instance-id | bash` to assign the EC2Admin role to all the cloud9 instances
 1. Sign in as each user and connect to each Cloud9 instance and:
     1. Close all the windows and open one big Terminal window
     1. Turn off AWS managed temporary credentials in settings (so it uses the full Admin IAM Role we assigned)
