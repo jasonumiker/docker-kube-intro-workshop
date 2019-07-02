@@ -5,7 +5,7 @@
 
 set -e
 
-NumberOfInstances=20
+NumberOfInstances=17
 
 # We need to get the account # and subnet ID as parameters
 if [ "$1" == "" ]; then
@@ -48,6 +48,7 @@ if [ "$3" == "" ]; then
     do
     # Create the Instance
     create_instance ${Users[$c-1]} $acct $subnet
+    sleep 30s
     done
 fi
 if [ "$3" != "" ]; then
@@ -55,5 +56,6 @@ if [ "$3" != "" ]; then
     do
     # Create the Instance
     create_instance ${Users[$c-1]} $acct $subnet
+    sleep 30s
     done
 fi
