@@ -20,7 +20,7 @@ To set up the environment:
     1. `cd docker-kube-intro-workshop`
     1. `chmod u+x eks-setup-script.sh bulk-create-iam-eks-roles.sh`
     1. `./eks-setup-script.sh`
-    1. `eksctl create cluster --name=eks --nodes=3 --node-ami=auto --region=us-west-2 --node-type m5.large`
+    1. `eksctl create cluster --name=eks --nodes=2 --node-ami=auto --region=us-west-2 --node-type m5.large`
     1. `kubectl edit -n kube-system configmap/aws-auth`
         1. Find/Replace account number in aws-auth-addition.yml with yours and then copy/paste it under mapRoles in the editor
     1. `kubectl apply -f eks-user.yml`
