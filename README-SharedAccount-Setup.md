@@ -30,6 +30,8 @@ To set up the environment:
     1. `cd ../docker-kube-intro-workshop`
     1. `./bulk-create-cloud9s.sh <AWS Account #> <one of the EKS Public Subnet IDs>`
         1. If you get throttled note where it left off and rerun it with a 3rd parameter of the user # to start with. If it made it to 10 then put an 11 for the next user to create.
+    1. Edit `trust-policy-document.json and replace 111111111111 with the account number and save it
+    1. Run `./bulk-create-iam-eks-roles.sh`
 1. Assign the EC2 role with Admin privileges to each Cloud9 instance in the EC2 console
 1. Sign in as each user and connect to each Cloud9 instance and:
     1. Close all the windows and open one big Terminal window
