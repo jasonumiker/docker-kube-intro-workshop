@@ -18,7 +18,7 @@ To set up the environment:
     1. `git clone https://github.com/jasonumiker/docker-kube-intro-workshop.git`
     1. `git clone https://github.com/jasonumiker/bulk-create-iam-users.git`
     1. `cd docker-kube-intro-workshop`
-    1. `chmod u+x eks-setup-script.sh bulk-create-iam-eks-roles.sh`
+    1. `chmod u+x eks-setup-script.sh bulk-create-iam-eks-roles.sh bulk-create-cloud9s.sh`
     1. `./eks-setup-script.sh`
     1. `eksctl create cluster --name=eks --nodes=2 --node-ami=auto --region=us-west-2 --node-type m5.large`
     1. `kubectl edit -n kube-system configmap/aws-auth`
