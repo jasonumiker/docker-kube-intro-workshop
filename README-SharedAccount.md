@@ -44,7 +44,8 @@ The first part of this workshop will focus on the fundamentals of Docker and how
 1. Finally we'll try mouting some files from the host into the container rather than embedding them in the image. Run `docker run -d -p 8080:80 -v /home/ec2-user/environment/docker-kube-intro-workshop/index.html:/usr/share/nginx/html/index.html:ro --name nginx nginx:latest`
 1. Do a `curl http://localhost:8080`. Note that even though this is the upstream nginx image from Docker Hub our content is there.
 1. Edit the index.html file (using nano not vi - not sure why that doesn't work) and add some more things.
-1. Do another `curl http://localhost:8080` and note the immediate changes.
+1. Do a `docker stop nginx` and then a `docker start nginx` to restart the container. It'll remember all the command-line options we ran it with.
+1. Do another `curl http://localhost:8080` and note the changes.
 1. Run `docker stop nginx` and `docker rm nginx` to stop and remove our last container.
 
 ### Kubernetes Basics
